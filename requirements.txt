@@ -2,8 +2,9 @@ fastapi
 uvicorn
 python-multipart
 numpy
-tensorflow
+tensorflow==2.15.0
 Pillow
 streamlit
 requests
 huggingface_hub
+
