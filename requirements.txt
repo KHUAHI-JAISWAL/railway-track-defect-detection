@@ -7,4 +7,6 @@ Pillow
 streamlit
 requests
 huggingface_hub
+keras==2.12.0
+
 
