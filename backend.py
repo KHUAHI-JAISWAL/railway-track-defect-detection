@@ -18,7 +18,7 @@ model_path = hf_hub_download(
     filename="railway_defect_cnn_model.h5"
 )
 
-model = load_model(model_path)
+model = load_model(model_path, compile=False)
 
 labels = ["Non Defective", "Defective"]
 
@@ -52,4 +52,5 @@ async def predict(file: UploadFile = File(...)):
     return {
         "class": label,
         "confidence": float(confidence)
+
     }
